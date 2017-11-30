@@ -1,0 +1,7 @@
+sceneSetups:
+- path: Assets/Maps/Test track/simpleTrack.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Maps/test/benodigheden.unity
+  isLoaded: 1
+  isActive: 1
