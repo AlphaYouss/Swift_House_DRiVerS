@@ -78,7 +78,7 @@
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/Youssef/Desktop/nieuw/Test_House_DRiVerS/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/Youssef/Documents/GitKraken/Swift_House_DRiVerS/Test_House_DRiVerS/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
