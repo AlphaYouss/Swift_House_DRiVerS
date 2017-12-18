@@ -54,7 +54,6 @@
      <Compile Include="Assets\Custom Assets\TrackPacks\DinnerTable\Editor\ImageEffects\AntialiasingEditor.cs" />
      <Compile Include="Assets\Custom Assets\TrackPacks\DinnerTable\Editor\ImageEffects\BloomAndFlaresEditor.cs" />
      <Compile Include="Assets\Custom Assets\TrackPacks\DinnerTable\Editor\ImageEffects\BloomEditor.cs" />
-     <Compile Include="Assets\Custom Assets\TrackPacks\GECommon\GE Touch Joystick\CrossPlatformInput\Scripts\Editor\InputAxisScrollbarCI.cs" />
      <None Include="Assets\Custom Assets\TrackPacks\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
      <None Include="Assets\Custom Assets\TrackPacks\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
      <None Include="Assets\Custom Assets\TrackPacks\GUIAnimator\GUI Animator FREE\Readme.txt" />
@@ -104,7 +103,6 @@
      <None Include="Assets\Custom Assets\TrackPacks\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
      <None Include="Assets\Custom Assets\TrackPacks\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
      <None Include="Assets\Custom Assets\TrackPacks\GUIAnimator\GUI Animator FREE\!How to.txt" />
-     <None Include="Assets\Scripts\used\nothing.txt" />
      <None Include="Assets\Custom Assets\TrackPacks\GECommon\Readme.txt" />
      <None Include="Assets\Tracks\Multiplayer\nothing.txt" />
      <None Include="Assets\Custom Assets\TrackPacks\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
@@ -135,10 +133,10 @@
      <None Include="Assets\Custom Assets\TrackPacks\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Custom Assets\TrackPacks\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/Youssef/Desktop/House_DRiVerS/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/Youssef/Downloads/House_DRiVerS/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/Youssef/Desktop/House_DRiVerS/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/Youssef/Downloads/House_DRiVerS/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions.Editor">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
@@ -240,10 +238,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="GETween">
- <HintPath>C:/Users/Youssef/Desktop/House_DRiVerS/Assets/Custom Assets/TrackPacks/GUIAnimator/Common/Plugins/GETween.dll</HintPath>
+ <HintPath>C:/Users/Youssef/Downloads/House_DRiVerS/Assets/Custom Assets/TrackPacks/GUIAnimator/Common/Plugins/GETween.dll</HintPath>
  </Reference>
  <Reference Include="GUIAnimatorFREE">
- <HintPath>C:/Users/Youssef/Desktop/House_DRiVerS/Assets/Custom Assets/TrackPacks/GUIAnimator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll</HintPath>
+ <HintPath>C:/Users/Youssef/Downloads/House_DRiVerS/Assets/Custom Assets/TrackPacks/GUIAnimator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/Youssef/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@1.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
