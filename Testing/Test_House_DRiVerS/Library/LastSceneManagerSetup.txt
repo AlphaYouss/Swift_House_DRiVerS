@@ -1,0 +1,19 @@
+sceneSetups:
+- path: Assets/UI/HouseDrivers.unity
+  isLoaded: 1
+  isActive: 1
+- path: Assets/UI/SelectCar.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/UI/SelectLevel.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/UI/loadscreen.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/UI/Settings.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Tracks/Singleplayer/SingleplayerStandardtrack/SingleplayerStandardtrack.unity
+  isLoaded: 0
+  isActive: 0
