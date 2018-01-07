@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Tracks/Singleplayer/SingleplayerStandardtrack/SingleplayerStandardtrack.unity
-  isLoaded: 1
-  isActive: 1
