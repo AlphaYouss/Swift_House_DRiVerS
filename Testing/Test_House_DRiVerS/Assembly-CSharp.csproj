@@ -93,40 +93,10 @@
      <Compile Include="Assets\Custom Assets\Track Packs\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
      <Compile Include="Assets\Custom Assets\Track Packs\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
      <Compile Include="Assets\Custom Assets\Track Packs\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Orbit Camera\Scripts\GE_OrbitCamera.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Orbit Camera\Scripts\GE_OrbitCameraUI.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\RollerBall\Scripts\Ball.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\RollerBall\Scripts\BallUserControl.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\CrossPlatformInput\Scripts\CameraSwitch.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\CrossPlatformInput\Scripts\LevelReset.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Utility\CameraRefocus.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Utility\CurveControlledBob.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Utility\FOVKick.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Utility\LerpControlledBob.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GECommon\Scripts\GE_UIResponder.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo00.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo01.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo02.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo03.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo04.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo05.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo06.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo07.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo08.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
-     <Compile Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
      <Compile Include="Assets\Scripts\Unused\Controls.cs" />
      <Compile Include="Assets\Scripts\Unused\customCarController.cs" />
      <Compile Include="Assets\Scripts\Used\cameraControls.cs" />
+     <Compile Include="Assets\Scripts\Used\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Used\countdown.cs" />
      <Compile Include="Assets\Scripts\Used\HalfPointTrigger.cs" />
      <Compile Include="Assets\Scripts\Used\LapComplete.cs" />
@@ -142,7 +112,6 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
      <None Include="Assets\Images\Cars\nothing.txt" />
-     <None Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Readme.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
@@ -152,7 +121,6 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
-     <None Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
@@ -179,7 +147,6 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
-     <None Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\Images\Tracks\nothing.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
@@ -194,8 +161,6 @@
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
-     <None Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\!How to.txt" />
-     <None Include="Assets\Custom Assets\Track Packs\GECommon\Readme.txt" />
      <None Include="Assets\Tracks\Multiplayer\nothing.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
@@ -215,7 +180,6 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
      <None Include="Assets\Audio\nothing.txt" />
-     <None Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
@@ -226,7 +190,7 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>D:/_KILOTEHH/Versie_0.6.2/Test_House_DRiVerS/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>D:/_PROJECT/_DENNIS/Testing/Test_House_DRiVerS/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
@@ -257,12 +221,6 @@
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
- </Reference>
- <Reference Include="GETween">
- <HintPath>D:/_KILOTEHH/Versie_0.6.2/Test_House_DRiVerS/Assets/Custom Assets/Track Packs/GUIAnimator/Common/Plugins/GETween.dll</HintPath>
- </Reference>
- <Reference Include="GUIAnimatorFREE">
- <HintPath>D:/_KILOTEHH/Versie_0.6.2/Test_House_DRiVerS/Assets/Custom Assets/Track Packs/GUIAnimator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/Youssef/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>

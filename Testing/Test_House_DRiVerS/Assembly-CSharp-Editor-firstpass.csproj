@@ -55,7 +55,6 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
      <None Include="Assets\Images\Cars\nothing.txt" />
-     <None Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\Readme.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
@@ -65,7 +64,6 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
-     <None Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
@@ -92,7 +90,6 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
-     <None Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\RollerBall\RollerBallGuidelines.txt" />
      <None Include="Assets\Images\Tracks\nothing.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
@@ -107,8 +104,6 @@
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
-     <None Include="Assets\Custom Assets\Track Packs\GUIAnimator\GUI Animator FREE\!How to.txt" />
-     <None Include="Assets\Custom Assets\Track Packs\GECommon\Readme.txt" />
      <None Include="Assets\Tracks\Multiplayer\nothing.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
@@ -128,7 +123,6 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
      <None Include="Assets\Audio\nothing.txt" />
-     <None Include="Assets\Custom Assets\Track Packs\GECommon\GE Touch Joystick\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
@@ -139,7 +133,7 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>D:/_KILOTEHH/Versie_0.6.2/Test_House_DRiVerS/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>D:/_PROJECT/_DENNIS/Testing/Test_House_DRiVerS/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions.Editor">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
@@ -239,12 +233,6 @@
  </Reference>
  <Reference Include="UnityEditor.Facebook.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="GETween">
- <HintPath>D:/_KILOTEHH/Versie_0.6.2/Test_House_DRiVerS/Assets/Custom Assets/Track Packs/GUIAnimator/Common/Plugins/GETween.dll</HintPath>
- </Reference>
- <Reference Include="GUIAnimatorFREE">
- <HintPath>D:/_KILOTEHH/Versie_0.6.2/Test_House_DRiVerS/Assets/Custom Assets/Track Packs/GUIAnimator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/Youssef/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@1.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
