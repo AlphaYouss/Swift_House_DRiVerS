@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Xml;
+using System;
 public class LapComplete : MonoBehaviour
 {
 
     public GameObject LapCompleteTrig;
     public GameObject HalfLapTrig;
-
+    public GameObject car;
     public GameObject MinuteDisplay;
     public GameObject SecondDisplay;
     public GameObject MilliDisplay;
@@ -59,11 +61,19 @@ public class LapComplete : MonoBehaviour
     public GameObject SecDisplay2;
     public GameObject MilliDisplay2;
     public GameObject ThousDisplay2;
-    
+
+    public int totalMin;
+    public int totalHours;
+    public int totalSeconds;
+    public float totalMilliSeconds;
+    public float totalThousendSeconds;
+
+    public int attempt;
+
     public float d = 0.5f;
     public void loadFinish()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("finish");
     }
 
     void OnTriggerEnter()
@@ -72,9 +82,9 @@ public class LapComplete : MonoBehaviour
         rawtime = PlayerPrefs.GetFloat("rawtime");
         if (LapTimeManager.rawTime <= rawtime)
         {
-         
-            
-            if(LapTimeManager.MilliCount <= 10)
+
+
+            if (LapTimeManager.MilliCount <= 10)
             {
                 MilliDisplay.GetComponent<Text>().text = "" + LapTimeManager.MilliCount + "";
             }
@@ -119,7 +129,7 @@ public class LapComplete : MonoBehaviour
             ThousCount = PlayerPrefs.GetFloat("ThousSave");
 
 
-            if(MinCount <= 9)
+            if (MinCount <= 9)
             {
                 MinDisplay.GetComponent<Text>().text = "0" + MinCount + ":";
             }
@@ -135,7 +145,7 @@ public class LapComplete : MonoBehaviour
             {
                 SecDisplay.GetComponent<Text>().text = "" + SecCount + ":";
             }
-           
+
             MilliDisplayLaps.GetComponent<Text>().text = "" + MilliCount;
             ThousDisplay.GetComponent<Text>().text = "" + ThousCount;
 
@@ -147,11 +157,12 @@ public class LapComplete : MonoBehaviour
             {
                 MinuteDisplay.GetComponent<Text>().text = "" + MinCount + ":";
             }
-            if(SecCount <= 9)
+            if (SecCount <= 9)
             {
                 SecondDisplay.GetComponent<Text>().text = "0" + SecCount + ":";
             }
-            else{
+            else
+            {
                 SecondDisplay.GetComponent<Text>().text = "" + SecCount + ":";
             }
             MilliDisplay.GetComponent<Text>().text = "" + MilliCount;
@@ -174,7 +185,7 @@ public class LapComplete : MonoBehaviour
             MilliCount2 = PlayerPrefs.GetFloat("MilliSave2");
             ThousCount2 = PlayerPrefs.GetFloat("ThousSave2");
 
-            if(MinCount2 <= 9)
+            if (MinCount2 <= 9)
             {
                 MinDisplay1.GetComponent<Text>().text = "0" + MinCount2 + ":";
             }
@@ -195,7 +206,8 @@ public class LapComplete : MonoBehaviour
 
         }
 
-        if (LapsDone == 3){
+        if (LapsDone == 3)
+        {
             PlayerPrefs.SetInt("MinSave3", LapTimeManager.MinuteCount);
             PlayerPrefs.SetInt("SecSave3", LapTimeManager.SecondCount);
             PlayerPrefs.SetFloat("MilliSave3", LapTimeManager.MilliCount);
@@ -223,7 +235,7 @@ public class LapComplete : MonoBehaviour
             {
                 SecDisplay2.GetComponent<Text>().text = "" + SecCount3 + ":";
             }
-            
+
             MilliDisplay2.GetComponent<Text>().text = "" + MilliCount3;
             ThousDisplay2.GetComponent<Text>().text = "" + ThousCount3;
 
@@ -246,10 +258,234 @@ public class LapComplete : MonoBehaviour
 
         if (LapsDone == 3)
         {
+            SaveTimeTotal();
+            SaveTotalTime();
             RaceFinish.SetActive(true);
             LapTimeBox.SetActive(false);
             loadFinish();
         }
     }
-   
+    public void SaveTimeTotal()
+    {
+        totalMin = MinCount + MinCount2 + MinCount3;
+        totalSeconds = SecCount + SecCount2 + SecCount3;
+        totalMilliSeconds = MilliCount + MilliCount2 + MilliCount3;
+        totalThousendSeconds = ThousCount + ThousCount2 + ThousCount3;
+    }
+    //public void getAttempts()
+    //{
+     //   XmlDocument doc = new XmlDocument();
+     //   doc.Load("racegame.xml");
+     //   if (attempt != 0)
+    //    {
+    //        XmlNodeList userNodes = doc.SelectNodes("//trial/Attempt");
+    //        foreach (XmlNode userNode in userNodes)
+    //        {
+    //            attempt++;
+     //           doc.Save("racegame.xml");
+     //       }
+     //   }
+        
+        
+   // }
+    public void SaveTotalTime()
+    {
+        attempt++;
+        XmlDocument xmlDoc = new XmlDocument();
+
+        xmlDoc.Load("racegame.xml");
+
+        XmlNode node = xmlDoc.CreateNode(XmlNodeType.Element, "trial", null);
+
+        XmlNode root = xmlDoc.DocumentElement;
+
+        XmlNode userNode1 = xmlDoc.CreateElement("track");
+
+        XmlAttribute attribute5 = xmlDoc.CreateAttribute("Track");
+        attribute5.Value = SceneManager.GetActiveScene().name;
+        userNode1.Attributes.Append(attribute5);
+        node.AppendChild(userNode1);
+
+        string RacedWithCar =  car.name;
+        XmlNode userNode2 = xmlDoc.CreateElement("Car");
+
+        XmlAttribute attribute6 = xmlDoc.CreateAttribute("Car");
+        attribute6.Value = RacedWithCar;
+        userNode2.Attributes.Append(attribute6);
+        node.AppendChild(userNode2);
+
+        
+
+        //XmlAttribute attribute7 = xmlDoc.CreateAttribute("Attempt");
+        //getAttempts();
+        //string attempts = attempt.ToString();
+        //attribute7.Value = attempts;
+        //userNode3.Attributes.Append(attribute7);
+        //node.AppendChild(userNode3);
+
+        XmlNode userNode = xmlDoc.CreateElement("time");
+
+        XmlAttribute attribute4 = xmlDoc.CreateAttribute("hours");
+        attribute4.Value = totalHours.ToString();
+        userNode.Attributes.Append(attribute4);
+        node.AppendChild(userNode);
+
+
+
+        XmlAttribute attribute1 = xmlDoc.CreateAttribute("sec");
+        if (totalSeconds > 60)
+        {
+            totalMin++;
+            totalSeconds -= 60;
+            if (totalSeconds > 60)
+            {
+                totalMin++;
+                totalSeconds -= 60;
+                attribute1.Value = totalSeconds.ToString();
+            }
+            else
+            {
+                attribute1.Value = totalSeconds.ToString();
+            }
+        }
+        else
+        {
+            attribute1.Value = totalSeconds.ToString();
+        }
+
+        userNode.Attributes.Append(attribute1);
+        node.AppendChild(userNode);
+
+        XmlAttribute attribute = xmlDoc.CreateAttribute("min");
+        if (totalMin <= 9)
+        {
+            string ttMin = '0' + totalMin.ToString();
+            attribute.Value = ttMin;
+        }
+        else
+        {
+            attribute.Value = totalMin.ToString();
+        }
+        userNode.Attributes.Append(attribute);
+        node.AppendChild(userNode);
+
+
+
+        XmlAttribute attribute2 = xmlDoc.CreateAttribute("milli");
+        attribute2.Value = totalMilliSeconds.ToString();
+        userNode.Attributes.Append(attribute2);
+        node.AppendChild(userNode);
+
+
+        XmlAttribute attribute3 = xmlDoc.CreateAttribute("thousend");
+        attribute3.Value = totalThousendSeconds.ToString();
+        userNode.Attributes.Append(attribute3);
+
+        userNode = xmlDoc.CreateElement("lap1");
+
+        attribute = xmlDoc.CreateAttribute("min");
+        if (MinCount <= 9)
+        {
+            string ttMin = '0' + MinCount.ToString();
+            attribute.Value = ttMin;
+        }
+        else
+        {
+            attribute.Value = MinCount.ToString();
+        }
+        userNode.Attributes.Append(attribute);
+        node.AppendChild(userNode);
+
+
+
+        attribute1 = xmlDoc.CreateAttribute("sec");
+        attribute1.Value = SecCount.ToString();
+        userNode.Attributes.Append(attribute1);
+        node.AppendChild(userNode);
+
+
+        attribute2 = xmlDoc.CreateAttribute("milli");
+        attribute2.Value = MilliCount.ToString();
+        userNode.Attributes.Append(attribute2);
+        node.AppendChild(userNode);
+
+
+        attribute3 = xmlDoc.CreateAttribute("thousend");
+        attribute3.Value = ThousCount.ToString();
+        userNode.Attributes.Append(attribute3);
+
+        userNode = xmlDoc.CreateElement("lap2");
+
+        attribute = xmlDoc.CreateAttribute("min");
+        if (MinCount2 <= 9)
+        {
+            string ttMin = '0' + MinCount2.ToString();
+            attribute.Value = ttMin;
+        }
+        else
+        {
+            attribute.Value = MinCount2.ToString();
+        }
+        userNode.Attributes.Append(attribute);
+        node.AppendChild(userNode);
+
+
+
+        attribute1 = xmlDoc.CreateAttribute("sec");
+        attribute1.Value = SecCount2.ToString();
+        userNode.Attributes.Append(attribute1);
+        node.AppendChild(userNode);
+
+
+        attribute2 = xmlDoc.CreateAttribute("milli");
+        attribute2.Value = MilliCount2.ToString();
+        userNode.Attributes.Append(attribute2);
+        node.AppendChild(userNode);
+
+
+        attribute3 = xmlDoc.CreateAttribute("thousend");
+        attribute3.Value = ThousCount2.ToString();
+        userNode.Attributes.Append(attribute3);
+
+        userNode = xmlDoc.CreateElement("lap3");
+
+        attribute = xmlDoc.CreateAttribute("min");
+        if (MinCount3 <= 9)
+        {
+            string ttMin = '0' + MinCount3.ToString();
+            attribute.Value = ttMin;
+        }
+        else
+        {
+            attribute.Value = MinCount3.ToString();
+        }
+        userNode.Attributes.Append(attribute);
+        node.AppendChild(userNode);
+
+
+
+        attribute1 = xmlDoc.CreateAttribute("sec");
+        attribute1.Value = SecCount3.ToString();
+        userNode.Attributes.Append(attribute1);
+        node.AppendChild(userNode);
+
+
+        attribute2 = xmlDoc.CreateAttribute("milli");
+        attribute2.Value = MilliCount3.ToString();
+        userNode.Attributes.Append(attribute2);
+        node.AppendChild(userNode);
+
+
+        attribute3 = xmlDoc.CreateAttribute("thousend");
+        attribute3.Value = ThousCount3.ToString();
+        userNode.Attributes.Append(attribute3);
+
+        node.AppendChild(userNode);
+        node.AppendChild(userNode);
+        node.AppendChild(userNode);
+        node.AppendChild(userNode);
+        xmlDoc.DocumentElement.AppendChild(node);
+        xmlDoc.Save("racegame.xml");
+    }
+
 }

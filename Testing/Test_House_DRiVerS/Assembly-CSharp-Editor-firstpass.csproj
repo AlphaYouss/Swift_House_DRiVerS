@@ -52,22 +52,34 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
-     <None Include="Assets\Images\Cars\nothing.txt" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\#CEJAY\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\#CEJAY\Standard Assets\Vehicles\Shaders\ReflectiveDiffuseSpec.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
+     <None Include="Assets\#CEJAY\Standard Assets\Vehicles\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\#CEJAY\Standard Assets\Vehicles\Shaders\DiffuseReflectiveShader.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\#CEJAY\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
      <None Include="Assets\Standard Assets\Vehicles\Shaders\DiffuseReflectiveShader.shader" />
@@ -75,38 +87,50 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
-     <None Include="Assets\Images\UI\nothing.txt" />
+     <None Include="Assets\#CEJAY\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
      <None Include="Assets\Standard Assets\Vehicles\Shaders\ReflectiveDiffuseSpecTransp.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\Vehicles\Shaders\ReflectiveDiffuseSpec.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald Bold - OFL.txt" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
-     <None Include="Assets\Images\Tracks\nothing.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Examples &amp; Extras\Fonts\NotoSans - License.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
-     <None Include="Assets\Images\Controls\nothing.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
+     <None Include="Assets\#CEJAY\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
      <None Include="Assets\Tracks\Multiplayer\nothing.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Fonts\something-looks-natural\Read Me.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
@@ -117,12 +141,14 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\#CEJAY\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\#CEJAY\Tracks\Multiplayer\nothing.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
-     <None Include="Assets\Audio\nothing.txt" />
+     <None Include="Assets\#CEJAY\Audio\nothing.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
@@ -133,7 +159,7 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>D:/_PROJECT/_DENNIS/Testing/Test_House_DRiVerS/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>D:/#PROJECT/YOUSSEF/Testing/Test_House_DRiVerS/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="Vuforia.UnityExtensions.Editor">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
@@ -233,6 +259,12 @@
  </Reference>
  <Reference Include="UnityEditor.Facebook.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.2-1.0.56-Editor">
+ <HintPath>D:/#PROJECT/YOUSSEF/Testing/Test_House_DRiVerS/Assets/Custom Assets/Text Mesh/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.2-1.0.56-Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.2-1.0.56-Runtime">
+ <HintPath>D:/#PROJECT/YOUSSEF/Testing/Test_House_DRiVerS/Assets/Custom Assets/Text Mesh/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.2-1.0.56-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/Youssef/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@1.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>

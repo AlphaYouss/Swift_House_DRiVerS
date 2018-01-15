@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Threading;
 
-public class loadScript : MonoBehaviour
+public class LoadScript : MonoBehaviour
 {
 
     public RawImage image;
@@ -30,7 +30,7 @@ public class loadScript : MonoBehaviour
         }
         if (temp == 500)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(5);
         }
     }
 }

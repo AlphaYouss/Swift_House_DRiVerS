@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class pauseScreen : MonoBehaviour {
+public class PauseScreen : MonoBehaviour {
 
     public Transform canvas;
 

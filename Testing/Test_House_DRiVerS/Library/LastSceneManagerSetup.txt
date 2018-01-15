@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Tracks/Practice/DragonTrack/PracticeDragonTrack.unity
+- path: Assets/UI/HouseDrivers.unity
   isLoaded: 1
   isActive: 1

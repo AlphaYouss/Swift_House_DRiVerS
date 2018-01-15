@@ -4,14 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class selectLevel : MonoBehaviour {
+public class SelectLevel : MonoBehaviour {
 
     public Button GoButton;
     public Button generalTrack;
     public Button back;
     public Canvas infotrack;
-    public Text text;
-    public Color color;
 
 
 
@@ -21,7 +19,6 @@ public class selectLevel : MonoBehaviour {
         generalTrack = generalTrack.GetComponent<Button>();
         infotrack = infotrack.GetComponent<Canvas>();
         GoButton = GoButton.GetComponent<Button>();
-
         infotrack.enabled = false;
         GoButton.interactable = false;
     }
@@ -38,12 +35,12 @@ public class selectLevel : MonoBehaviour {
 
     public void Go()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(3);
     }
 
     public void BackSelectMap()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void Back()

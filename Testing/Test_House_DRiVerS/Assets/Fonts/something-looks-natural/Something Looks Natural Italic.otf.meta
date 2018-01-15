@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ca7a2a60ec431404b943f3aae660da3f
+timeCreated: 1515964719
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Something Looks Natural
+  fontNames:
+  - Something Looks Natural
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 341442b3e3d88a445824aec0fcdcc0cd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
