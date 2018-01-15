@@ -19,6 +19,10 @@ namespace UnityStandardAssets.Vehicles.Car
 
         private void FixedUpdate()
         {
+            if(CarController.m_Rigidbody == null)
+            {
+                CarController.m_Rigidbody = GetComponent<Rigidbody>();
+            }
             // pass the input to the car!
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");

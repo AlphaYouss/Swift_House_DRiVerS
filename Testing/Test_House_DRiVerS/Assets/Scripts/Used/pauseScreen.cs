@@ -36,6 +36,9 @@ public class PauseScreen : MonoBehaviour {
 
     public void TitleScreen()
     {
+        Debug.Log("test " + CarController.m_Rigidbody);
+        CarController.m_Rigidbody = null;
+        Debug.Log("test 2" + CarController.m_Rigidbody);
         SceneManager.LoadScene(0);
     }
 

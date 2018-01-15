@@ -11,8 +11,6 @@ public class SettingScript : MonoBehaviour {
     public Canvas resolutionCanvas;
     public Canvas audioCanvas;
     public Button back;
-    public Button audio;
-    public Button audioBack;
 
     public RawImage keyboardWASD;
     public RawImage keyboardArrows;
@@ -25,8 +23,6 @@ public class SettingScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         back = back.GetComponent<Button>();
-        audio = audio.GetComponent<Button>();
-        audioBack = audioBack.GetComponent<Button>();
         ControlsCanvas = ControlsCanvas.GetComponent<Canvas>();
         audioCanvas = audioCanvas.GetComponent<Canvas>();
         resolutionCanvas = resolutionCanvas.GetComponent<Canvas>();

@@ -16,6 +16,7 @@ namespace UnityStandardAssets.Vehicles.Car
         KPH
     }
 
+
     public class CarController : MonoBehaviour
     {
         [SerializeField] private CarDriveType m_CarDriveType = CarDriveType.FourWheelDrive;
@@ -37,6 +38,7 @@ namespace UnityStandardAssets.Vehicles.Car
         [SerializeField] private float m_SlipLimit;
         [SerializeField] private float m_BrakeTorque;
 
+
         private Quaternion[] m_WheelMeshLocalRotations;
         private Vector3 m_Prevpos, m_Pos;
         private float m_SteerAngle;
@@ -44,8 +46,9 @@ namespace UnityStandardAssets.Vehicles.Car
         private float m_GearFactor;
         private float m_OldRotation;
         private float m_CurrentTorque;
-        private Rigidbody m_Rigidbody;
+        public static Rigidbody m_Rigidbody;
         private const float k_ReversingThreshold = 0.01f;
+        private String name;
 
         public bool Skidding { get; private set; }
         public float BrakeInput { get; private set; }
@@ -68,6 +71,7 @@ namespace UnityStandardAssets.Vehicles.Car
             m_MaxHandbrakeTorque = float.MaxValue;
 
             m_Rigidbody = GetComponent<Rigidbody>();
+            name = m_Rigidbody.name;
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);
         }
 
@@ -88,7 +92,6 @@ namespace UnityStandardAssets.Vehicles.Car
                 m_GearNum++;
             }
         }
-
 
         // simple function to add a curved bias towards 1 for a value in the 0-1 range
         private static float CurveFactor(float factor)
@@ -128,6 +131,10 @@ namespace UnityStandardAssets.Vehicles.Car
 
         public void Move(float steering, float accel, float footbrake, float handbrake)
         {
+            if (m_Rigidbody == null)
+            {
+                m_Rigidbody = GetComponent<Rigidbody>();
+            }
             for (int i = 0; i < 4; i++)
             {
                 Quaternion quat;

@@ -3,7 +3,7 @@ using UnityEngine.UI;// we need this namespace in order to access UI elements wi
 using System.Collections;
 using UnityEngine.SceneManagement; // neded in order to load scenes
 
-public class MenuScript : MonoBehaviour
+public class menuScript : MonoBehaviour
 {
     public Canvas quitMenu;
     public Button startText;

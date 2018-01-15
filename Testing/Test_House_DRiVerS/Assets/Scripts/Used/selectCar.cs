@@ -33,7 +33,10 @@ public class SelectCar : MonoBehaviour {
         PlayerPrefs.SetString("car", "ravens");
         goButton.interactable = true;
         trackInfo.enabled = true;
-        ravensImage.enabled = true; 
+        ravensImage.enabled = true;
+        dragonsImage.enabled = false;
+        SerptentsImage.enabled = false;
+        VikingsImage.enabled = false;
     }
 
     public void SelectDragons()
@@ -42,6 +45,9 @@ public class SelectCar : MonoBehaviour {
         goButton.interactable = true;
         trackInfo.enabled = true;
         dragonsImage.enabled = true;
+        ravensImage.enabled = false;
+        SerptentsImage.enabled = false;
+        VikingsImage.enabled = false;
     }
 
     public void SelectSerpents()
@@ -50,6 +56,9 @@ public class SelectCar : MonoBehaviour {
         goButton.interactable = true;
         trackInfo.enabled = true;
         SerptentsImage.enabled = true;
+        ravensImage.enabled = false;
+        dragonsImage.enabled = false;
+        VikingsImage.enabled = false;
     }
 
     public void SelectVikings()
@@ -58,10 +67,15 @@ public class SelectCar : MonoBehaviour {
         goButton.interactable = true;
         trackInfo.enabled = true;
         VikingsImage.enabled = true;
+        ravensImage.enabled = false;
+        dragonsImage.enabled = false;
+        SerptentsImage.enabled = false;
     }
 
     public void Go()
     {
+        SceneManager.LoadScene(5);
+        SceneManager.UnloadSceneAsync(5);
         SceneManager.LoadScene(5);
     }
 
