@@ -4,4 +4,28 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/UI/HouseDrivers.unity
+    guid: 08fa7194a2f5f89478548fa8623dfa7f
+  - enabled: 1
+    path: Assets/UI/Settings.unity
+    guid: ed27189519d17bb409926295e8101b64
+  - enabled: 1
+    path: Assets/UI/SelectLevel.unity
+    guid: d0b2aecdb4cb0e44680b17d54a26c2ea
+  - enabled: 1
+    path: Assets/UI/SelectCar.unity
+    guid: 262425ba9fdeabe4da4b1d87290bf280
+  - enabled: 1
+    path: Assets/UI/Loadscreen.unity
+    guid: c52c478421188c44983222027990a7a5
+  - enabled: 1
+    path: Assets/Tracks/Singleplayer/_StandardTrack/SingleplayerStandardTrack.unity
+    guid: 7b4284d3bd643af48a370f52b51ece1c
+  - enabled: 1
+    path: Assets/Tracks/Practice/_StandardTrack/PracticeStandardTrack.unity
+    guid: 43e9300d1176b3143ae3182fcf51630d
+  - enabled: 1
+    path: Assets/UI/Finish.unity
+    guid: fe20c529ac6a5074a9813d84d5ac957f

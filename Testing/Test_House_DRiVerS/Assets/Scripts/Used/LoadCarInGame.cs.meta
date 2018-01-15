@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 7ea53250f5b048946a275786edd46475
+timeCreated: 1515966458
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - carRavens: {fileID: 1091430458810942, guid: 9bde8ff20f72ba342aa53adcc464bac7,
+      type: 2}
+  - carDragons: {fileID: 1237353948362370, guid: 7822091d5404ce54495aa68a4d55ae25,
+      type: 2}
+  - carSerpents: {fileID: 1642139551590546, guid: 080eeac52260dd34db26454ef67bbd4c,
+      type: 2}
+  - carVikings: {fileID: 1863251839793742, guid: 18f4464841ec8f749ba0f6b0e3c2e5ba,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

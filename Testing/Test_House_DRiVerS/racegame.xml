@@ -1,0 +1,40 @@
+<trial>
+  <track Track="SingleplayerStandardTrack" />
+  <Car Car="Raven" />
+  <time hours="0" sec="29" min="04" milli="23" thousend="13.21128" />
+  <lap1 min="01" sec="29" milli="9" thousend="5.078449" />
+  <lap2 min="01" sec="13" milli="9" thousend="8.132832" />
+  <lap3 min="01" sec="47" milli="5" thousend="0" />
+  <trial>
+    <track Track="SingleplayerStandardTrack" />
+    <Car Car="Raven" />
+    <time hours="0" sec="23" min="04" milli="18" thousend="16.28826" />
+    <lap1 min="01" sec="18" milli="9" thousend="8.608" />
+    <lap2 min="01" sec="48" milli="4" thousend="7.680256" />
+    <lap3 min="01" sec="17" milli="5" thousend="0" />
+  </trial>
+  <trial>
+    <track Track="SingleplayerStandardTrack" />
+    <Car Car="Raven" />
+    <time hours="0" sec="47" min="03" milli="22" thousend="6.909909" />
+    <lap1 min="01" sec="17" milli="9" thousend="2.139989" />
+    <lap2 min="01" sec="0" milli="4" thousend="4.76992" />
+    <lap3 min="01" sec="30" milli="9" thousend="0" />
+  </trial>
+  <trial>
+    <track Track="SingleplayerStandardTrack" />
+    <Car Car="SpawnPoint" />
+    <time hours="0" sec="51" min="02" milli="6" thousend="19.84447" />
+    <lap1 min="01" sec="3" milli="0" thousend="6.626749" />
+    <lap2 min="00" sec="51" milli="2" thousend="4.937354" />
+    <lap3 min="00" sec="57" milli="4" thousend="8.280369" />
+  </trial>
+  <trial>
+    <track Track="SingleplayerStandardTrack" />
+    <Car Car="SpawnPoint" />
+    <time hours="0" sec="56" min="02" milli="14" thousend="16.55376" />
+    <lap1 min="00" sec="55" milli="5" thousend="3.31438" />
+    <lap2 min="01" sec="4" milli="8" thousend="4.969969" />
+    <lap3 min="00" sec="57" milli="1" thousend="8.269416" />
+  </trial>
+</trial>

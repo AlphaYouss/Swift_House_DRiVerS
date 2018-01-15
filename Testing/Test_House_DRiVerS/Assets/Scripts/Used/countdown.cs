@@ -4,7 +4,7 @@ using UnityEngine;
 
 using UnityEngine.UI;
 
-public class countdown : MonoBehaviour
+public class Countdown : MonoBehaviour
 {
 
     public GameObject CountDown;
@@ -12,6 +12,8 @@ public class countdown : MonoBehaviour
     public AudioSource GoAudio;
     public GameObject LapTimer;
     public GameObject CarControls;
+    public GameObject stopFront;
+    public GameObject stopBack;
 
     void Start()
     {
@@ -21,6 +23,7 @@ public class countdown : MonoBehaviour
 
     IEnumerator CountStart()
     {
+        CarControls.SetActive(false);
         LapTimer.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         CountDown.GetComponent<Text>().text = "3";
@@ -41,6 +44,8 @@ public class countdown : MonoBehaviour
         GoAudio.Play();
         LapTimer.SetActive(true);
         CarControls.SetActive(true);
+        stopBack.SetActive(false);
+        stopFront.SetActive(false);
 
        
 
