@@ -293,6 +293,7 @@ public class LapComplete : MonoBehaviour
         attempt++;
         XmlDocument xmlDoc = new XmlDocument();
 
+        
         xmlDoc.Load("racegame.xml");
 
         XmlNode node = xmlDoc.CreateNode(XmlNodeType.Element, "trial", null);

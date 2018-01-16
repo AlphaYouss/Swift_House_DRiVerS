@@ -183,7 +183,7 @@
      <Compile Include="Assets\Scripts\Unused\Controls.cs" />
      <Compile Include="Assets\Scripts\Unused\customCarController.cs" />
      <Compile Include="Assets\Scripts\Used\Audio.cs" />
-     <Compile Include="Assets\Scripts\Used\CameraControls.cs" />
+     <Compile Include="Assets\Scripts\Used\cameraControls.cs" />
      <Compile Include="Assets\Scripts\Used\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Used\Countdown.cs" />
      <Compile Include="Assets\Scripts\Used\finishButtons.cs" />
@@ -193,13 +193,14 @@
      <Compile Include="Assets\Scripts\Used\LapTimeManager.cs" />
      <Compile Include="Assets\Scripts\Used\LoadCarInGame.cs" />
      <Compile Include="Assets\Scripts\Used\LoadLapTime.cs" />
-     <Compile Include="Assets\Scripts\Used\LoadScript.cs" />
-     <Compile Include="Assets\Scripts\Used\MenuScript.cs" />
-     <Compile Include="Assets\Scripts\Used\PauseScreen.cs" />
+     <Compile Include="Assets\Scripts\Used\loadScript.cs" />
+     <Compile Include="Assets\Scripts\Used\menuScript.cs" />
+     <Compile Include="Assets\Scripts\Used\pauseScreen.cs" />
      <Compile Include="Assets\Scripts\Used\RaceFinish.cs" />
-     <Compile Include="Assets\Scripts\Used\SelectCar.cs" />
-     <Compile Include="Assets\Scripts\Used\SelectLevel.cs" />
-     <Compile Include="Assets\Scripts\Used\SettingScript.cs" />
+     <Compile Include="Assets\Scripts\Used\selectCar.cs" />
+     <Compile Include="Assets\Scripts\Used\selectLevel.cs" />
+     <Compile Include="Assets\Scripts\Used\selectTimesButtons.cs" />
+     <Compile Include="Assets\Scripts\Used\settingScript.cs" />
      <None Include="Assets\Custom Assets\Text Mesh\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
@@ -307,10 +308,7 @@
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Custom Assets\Track Packs\DinnerTable\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>D:/#PROJECT/YOUSSEF/Testing/Test_House_DRiVerS/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
- </Reference>
- <Reference Include="Vuforia.UnityExtensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+ <HintPath>C:/Users/Gebruiker/Documents/GitHub/Swift_House_DRiVerS/Testing/Test_House_DRiVerS/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -340,16 +338,16 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-2017.2-1.0.56-Editor">
- <HintPath>D:/#PROJECT/YOUSSEF/Testing/Test_House_DRiVerS/Assets/Custom Assets/Text Mesh/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.2-1.0.56-Editor.dll</HintPath>
+ <HintPath>C:/Users/Gebruiker/Documents/GitHub/Swift_House_DRiVerS/Testing/Test_House_DRiVerS/Assets/Custom Assets/Text Mesh/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.2-1.0.56-Editor.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-2017.2-1.0.56-Runtime">
- <HintPath>D:/#PROJECT/YOUSSEF/Testing/Test_House_DRiVerS/Assets/Custom Assets/Text Mesh/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.2-1.0.56-Runtime.dll</HintPath>
+ <HintPath>C:/Users/Gebruiker/Documents/GitHub/Swift_House_DRiVerS/Testing/Test_House_DRiVerS/Assets/Custom Assets/Text Mesh/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.2-1.0.56-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Users/Youssef/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>C:/Users/Gebruiker/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Users/Youssef/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+ <HintPath>C:/Users/Gebruiker/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

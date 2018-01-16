@@ -51,7 +51,7 @@ public class LadTime : MonoBehaviour {
             string milli = userNode.Attributes["milli"].Value;
             string thousend = userNode.Attributes["thousend"].Value;
 
-            time.GetComponent<Text>().text = min + ':' + sec + ':' + milli + thousend;
+            time.GetComponent<Text>().text = min + ':' + sec + ':' + milli + '.' + thousend;
             
             xmlDoc.Save("racegame.xml");
         }
@@ -109,41 +109,43 @@ public class LadTime : MonoBehaviour {
         int lap1min = Convert.ToInt32(lap1Min);
         int lap1sec = Convert.ToInt32(lap1Sec);
        
-
         int lap2min = Convert.ToInt32(lap2Min);
         int lap2sec = Convert.ToInt32(lap2Sec);
         
-
         int lap3min = Convert.ToInt32(lap3Min);
         int lap3sec = Convert.ToInt32(lap3Sec);
       
-
         // check if lap 1 is the best lap
         if(lap1min <= lap2min && lap1min <= lap3min)
         {
-            if(lap1sec < lap2sec && lap1sec < lap3sec)
+            if(lap1sec < lap2sec || lap1sec < lap3sec)
             {
                 if(lap1sec <= 9)
                 {
-                    lap1.GetComponent<Text>().text = "" + lap1Min + ":0" + lap1Sec + ":" + lap1Milli + lap1Thous;
+                    lap1.GetComponent<Text>().text = "" + lap1Min + ":0" + lap1Sec + ":" + lap1Milli  + lap1Thous;
                     lap1.color = Color.white;
                 }
-                
+                else
+                {
+                    string lapOneTime = lap1Min + ":" + lap1Sec + ":" + lap1Milli +   lap1Thous;
+                    lap1.GetComponent<Text>().text = "" + lapOneTime;
+                    lap1.color = Color.white;
+                }
             }
             else
             {
-                lap1.GetComponent<Text>().text = "" + lap1Min + ":" + lap1Sec + ":" + lap1Milli + lap1Thous;
+                lap1.GetComponent<Text>().text = "" + lap1Min + ":" + lap1Sec + ":" + lap1Milli +  lap1Thous;
             }
         }
         else
         {
-            lap1.GetComponent<Text>().text = "" + lap1Min + ":" + lap1Sec + ":" + lap1Milli + lap1Thous;
+            lap1.GetComponent<Text>().text = "" + lap1Min + ":" + lap1Sec + ":" + lap1Milli +  lap1Thous;
         }
 
         // check if lap 2 is the best lap
         if (lap2min <= lap1min && lap2min <= lap3min)
         {
-            if (lap2sec < lap1sec && lap2sec < lap3sec)
+            if (lap2sec < lap1sec || lap2sec < lap3sec)
             { 
                 if(lap2sec <= 9)
                 {
@@ -151,26 +153,37 @@ public class LadTime : MonoBehaviour {
                     lap2.GetComponent<Text>().text = "" + lapOneTime;
                     lap2.color = Color.white;
                 }
-                
+                else
+                {
+                    string lapOneTime = lap2Min + ":" + lap2Sec + ":" + lap2Milli +  lap2Thous;
+                    lap2.GetComponent<Text>().text = "" + lapOneTime;
+                    lap2.color = Color.white;
+                }
             }
             else
             {
-                lap2.GetComponent<Text>().text = "" + lap2Min + ":" + lap2Sec + ":" + lap2Milli + lap2Thous;
+                lap2.GetComponent<Text>().text = "" + lap2Min + ":" + lap2Sec + ":" + lap2Milli +  lap2Thous;
             }
         }
         else
         {
-            lap2.GetComponent<Text>().text = "" + lap2Min + ":" + lap2Sec + ":" + lap2Milli  + lap2Thous;
+            lap2.GetComponent<Text>().text = "" + lap2Min + ":" + lap2Sec + ":" + lap2Milli  +  lap2Thous;
         }
 
         // check if lap 3 is the best lap
         if (lap3min <= lap2min && lap3min <= lap1min)
         {
-            if (lap3sec < lap2sec && lap3sec < lap1sec)
+            if (lap3sec < lap2sec || lap3sec < lap1sec)
             {
                 if (lap3sec <= 9)
                 {
-                    string lapOneTime = lap3Min + ":0" + lap3Sec + ":" + lap3Milli + lap3Thous;
+                    string lapOneTime = lap3Min + ":0" + lap3Sec + ":" + lap3Milli +  lap3Thous;
+                    lap3.GetComponent<Text>().text = "" + lapOneTime;
+                    lap3.color = Color.white;
+                }
+                else
+                {
+                    string lapOneTime = lap3Min + ":" + lap3Sec + ":" + lap3Milli + lap3Thous;
                     lap3.GetComponent<Text>().text = "" + lapOneTime;
                     lap3.color = Color.white;
                 }
@@ -178,12 +191,12 @@ public class LadTime : MonoBehaviour {
             }
             else
             {
-                lap3.GetComponent<Text>().text = "" + lap3Min + ":" + lap3Sec + ":" + lap3Milli + lap3Thous;
+                lap3.GetComponent<Text>().text = "" + lap3Min + ":" + lap3Sec + ":" + lap3Milli +  lap3Thous;
             }
         }
         else
         {
-            lap3.GetComponent<Text>().text = "" + lap3Min + ":" + lap3Sec + ":" + lap3Milli  + lap3Thous;
+            lap3.GetComponent<Text>().text = "" + lap3Min + ":" + lap3Sec + ":" + lap3Milli  +  lap3Thous;
         }
     }
 }

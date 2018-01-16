@@ -1,4 +1,13 @@
 sceneSetups:
-- path: Assets/UI/HouseDrivers.unity
+- path: Assets/UI/SelectCar.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Tracks/Singleplayer/_StandardTrack/SingleplayerStandardTrack.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/UI/leaderboard.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/UI/Finish.unity
   isLoaded: 1
   isActive: 1
